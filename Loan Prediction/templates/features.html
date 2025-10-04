@@ -1,0 +1,97 @@
+{% extends 'base.html'%}
+{% block title %}Features - Loan Portal{% endblock %}
+{% block x %}
+    <!-- Hero Section -->
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+            <h1 class="display-8"><b>Discover Powerful Features of Our Loan Approval System</b></h1>
+            <p class="lead mt-3">A modern solution designed to simplify loan management, reduce risk, and enhance user experience for both applicants and financial institutions.</p>
+        </div>
+    </section>
+
+    <!-- Features Overview -->
+    <div class="container my-4">
+        <h2 class="text-center mb-4"><b>Why Choose Our System ?</b></h2>
+        <div class="row g-5">
+
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/feature1.jpeg') }}" class="img-fluid rounded shadow" alt="Fast Processing">
+            </div>
+
+            <div class="col-md-6">
+                <h3><b>🚀 Fast Loan Processing</b></h3>
+                <p>Our system speeds up loan application approval by using intelligent algorithms and automation, reducing turnaround time from days to minutes. This helps banks and financial institutions make instant decisions.</p>
+            </div>
+
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row g-5">
+
+            <div class="col-md-6 order-md-2">
+                <img src="{{ url_for('static', filename='images/feature2.png') }}" class="img-fluid rounded shadow" alt="Accurate Risk Analysis">
+            </div>
+
+            <div class="col-md-6 order-md-1">
+                <h3><b>📊 Accurate Risk Analysis</b></h3>
+                <p>Our predictive analytics engine analyzes hundreds of data points from the applicant's profile to assess credit risk, reducing the chances of default and helping lenders make informed decisions.</p>
+            </div>
+
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row g-5">
+
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/feature3.jpeg') }}" class="img-fluid rounded shadow" alt="User Friendly Interface">
+            </div>
+
+            <div class="col-md-6">
+                <h3><b>🖥️ User-Friendly Interface</b></h3>
+                <p>The system offers a clean and intuitive interface that is easy to use for both applicants and administrators, minimizing errors and improving the overall user experience.</p>
+            </div>
+
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row g-5">
+
+            <div class="col-md-6 order-md-2">
+                <img src="{{ url_for('static', filename='images/feature4.jpeg') }}" class="img-fluid rounded shadow" alt="Comprehensive Reporting">
+            </div>
+
+            <div class="col-md-6 order-md-1">
+                <h3><b>📑 Comprehensive Reporting</b></h3>
+                <p>Generate real-time reports about loan applications, approval rates, risk profiles, and more, making it easy for financial managers to track performance and compliance.</p>
+            </div>
+
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row g-5">
+
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='images/feature5.jpeg') }}" class="img-fluid rounded shadow" alt="Secure Data Handling">
+            </div>
+
+            <div class="col-md-6">
+                <h3><b>🔒 Secure Data Handling</b></h3>
+                <p>We use state-of-the-art encryption and security protocols to ensure sensitive customer data is stored and processed securely in compliance with global regulations like GDPR.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="py-5 text-center bg-primary text-white">
+        <div class="container">
+            <h2>Check your eligibility for loan approval process?</h2>
+            <a href="./eligibility" class="btn btn-light btn-lg mt-3">Get Start</a>
+        </div>
+    </section>
+
+    {% endblock %}

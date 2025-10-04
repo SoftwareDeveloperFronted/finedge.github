@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% block title %}Forgot - Loan Portal{% endblock %}
+{% block x %}
+<div class="forgot-container">
+        <center><h1 class="mb-4"><b>Forgot Password</b></h1></center>
+        <p class="text-muted text-center">Enter your registered email to reset your password</p>
+
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{category}}">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+<div class="row mb-4">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <form method="POST">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+            <button type="submit" class="btn btn-primary btn-custom">Send Reset Link</button>
+            <br></div>
+            <div class="col-sm-6">
+            <a href="{{ url_for('login') }}" class="btn btn-primary">Back to Login</a></div>
+       </div>
+        </form>
+
+        
+    </div>
+    </div>
+    <div class="col-sm-3 "></div>
+</div>
+{% endblock %}

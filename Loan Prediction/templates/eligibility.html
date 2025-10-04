@@ -1,0 +1,90 @@
+{% extends 'base.html'%}
+{% block title %}Eligibility - Loan Portal{% endblock %}
+{% block x %}
+
+    <div class="container my-5">
+
+        <h1 class="text-center mb-4"><b>Comprehensive Loan Eligibility Criteria</b></h1>
+
+        <div class="card shadow p-4 mb-5">
+            <h3><b>Basic Eligibility Criteria</b></h3>
+            <ul class="list-group list-group-flush mt-3">
+                <li class="list-group-item"><strong>Age:</strong> 21 - 60 years</li>
+                <li class="list-group-item"><strong>Employment:</strong> At least 2 years of stable employment or business ownership</li>
+                <li class="list-group-item"><strong>Income:</strong> Minimum ₹25,000 monthly</li>
+                <li class="list-group-item"><strong>Credit Score:</strong> Minimum 600</li>
+                <li class="list-group-item"><strong>Existing Loans:</strong> No more than 2 active loans</li>
+                <li class="list-group-item"><strong>Documents Required:</strong> Aadhar, PAN, Salary slips, Bank statements, Address proof</li>
+            </ul>
+        </div>
+
+        <div class="card shadow p-4 mb-5">
+            <h3><b>Why These Criteria Matter</b></h3>
+            <p>
+                These eligibility criteria are designed to ensure responsible lending and minimize default risk. A good credit score reflects timely repayments in the past and financial discipline. Stable employment indicates regular income, which is essential for repayment ability. Proper documentation helps in preventing fraud and verifying identity.
+            </p>
+        </div>
+
+        <div class="card shadow p-4 mb-5">
+            <h3><b>Tips to Improve Loan Eligibility</b></h3>
+            <ul class="list-group list-group-flush mt-3">
+                <li class="list-group-item">Maintain a high credit score by paying bills and EMIs on time.</li>
+                <li class="list-group-item">Reduce existing debts before applying for a new loan.</li>
+                <li class="list-group-item">Ensure all documents are up-to-date and correctly filled.</li>
+                <li class="list-group-item">Increase your monthly income by additional sources or side business.</li>
+            </ul>
+        </div>
+
+        <div class="card shadow p-4 mb-5">
+            <h3><b>Frequently Asked Questions (FAQ)</b></h3>
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqOneHeading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                            What if my credit score is below 600?
+                        </button>
+                    </h2>
+                    <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You may still apply, but the loan amount offered may be lower, or the interest rate higher. It's recommended to improve your credit score first.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqTwoHeading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                            Can self-employed individuals apply?
+                        </button>
+                    </h2>
+                    <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, self-employed applicants must provide additional documents like business registration, income tax returns, and bank statements.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqThreeHeading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                            How soon can I get the loan after applying?
+                        </button>
+                    </h2>
+                    <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Typically, loan approval takes between 2 to 7 business days after document verification.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center mb-5">
+            <a href="./check_eligibility" class="btn btn-primary btn-lg">Check Your Eligibility</a>
+        </div>
+
+    </div>
+
+    {% endblock %}

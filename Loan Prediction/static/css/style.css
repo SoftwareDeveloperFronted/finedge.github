@@ -1,0 +1,106 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #1d1b1b;
+}
+
+section {
+    padding: 60px 0;
+}
+
+hr {
+    border-top: 1px solid #dee2e6;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h3 {
+    color: #007bff;
+}
+
+.card {
+    background-color: #ffffff;
+}
+
+.list-group-item {
+    font-size: 1.1rem;
+}
+
+.accordion-button {
+    font-weight: 500;
+}
+
+.btn-success {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background: url('{{ url_for("static", filename="images/loan1.jpg") }}') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+}
+
+.card img {
+    height: 225px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #007bff;
+}
+.contact-hero {
+    background: url('{{ url_for("static", filename="images/contact-bg.jpg") }}') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+form {
+    margin-top: -50px;
+}
+.forgot-container {
+            max-width: 450px;
+            margin: 60px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+        }
+        .forgot-container h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0d6efd;
+        }
+        .btn-custom {
+            width: 100%;
+        }

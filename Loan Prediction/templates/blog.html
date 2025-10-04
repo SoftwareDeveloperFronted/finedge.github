@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+{% block title %}Blog - Loan Portal{% endblock %}
+{% block x %}
+
+    <!-- Hero Section -->
+    <div class="container mb-4">
+        <center>
+            <h1 class="display-4 mb-2"><b>Understanding Loan Approval Process</b></h1>
+            <p class="lead">Learn the essential tips, factors, and steps to get your loan approved successfully.</p>
+            </center>
+        </div>
+
+    <!-- Blog Posts -->
+    <section class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/blog-1.jpg') }}" class="card-img-top" alt="Loan Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2"><b> Key Factors Lenders Look At</b></h5>
+                        <p class="card-text mb-2">Discover what lenders focus on when deciding loan approval – credit score, income, employment stability, and more.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/blog-2.jpg') }}" class="card-img-top" alt="Loan Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2"><b>How to Improve Your Credit Score</b></h5>
+                        <p class="card-text mb-2">Steps and strategies to raise your credit score for better chances of loan approval and lower interest rates.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/blog-3.jpg') }}" class="card-img-top" alt="Loan Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2"><b>Common Mistakes to Avoid</b></h5>
+                        <p class="card-text mb-2">Avoid these common pitfalls when applying for a loan to ensure your application is not rejected unnecessarily.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   {% endblock %}

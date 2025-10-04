@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% block title %}check_eligibility - Loan Portal{% endblock %}
+{% block x %}
+    <div class="container mt-5">
+        <h2 class="text-center mb-4"><b>Loan Eligibility Checker</b></h2>
+
+        <form action="/check_eligibility" method="POST" class="shadow p-4 bg-light rounded">
+
+            <div class="mb-3">
+                <label for="ApplicantIncome" class="form-label">Enter ApplicantIncome</label>
+                <input type="number" class="form-control" id="ApplicantIncome" name="ApplicantIncome" required>
+            </div>
+            <div class="mb-3">
+                <label for="CoapplicantIncome" class="form-label">Enter CoapplicantIncome</label>
+                <input type="number" class="form-control" id="CoapplicantIncome" name="CoapplicantIncome" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="employed" class="form-label">employed</label>
+                <select class="form-select" id="employed" name="employed" aria-label="Default select example" required>
+  <option selected>-- Select self_employed --</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+            </div>
+
+            <div class="mb-3">
+                <label for="credit" class="form-label">Credit</label>
+                <input type="number" class="form-control" id="credit" name="credit" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Check Eligibility</button>
+
+        </form>
+    </div>
+{% endblock %}

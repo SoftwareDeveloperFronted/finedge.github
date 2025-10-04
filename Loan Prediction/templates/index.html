@@ -1,0 +1,87 @@
+{% extends 'base.html'%}
+{% block title %}Home - Loan Portal{% endblock %}
+{% block x %}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container mb-4">
+      <div class="row align-items-center" >
+        
+        <!-- Text -->
+        <div class="col-md-6 hero-text mb-4">
+          <h1 class="display-5 fw-bold">Get Instant Loans Easily</h1>
+          <p class="lead text-muted">Quick approval, low interest, and secure process. Apply now and achieve your financial goals without hassle.</p>
+          <br>
+          <a href=".\predict" class="btn btn-primary btn-lg">Prediction </a>
+          <a href=".\check_eligibility" class="btn btn-primary btn-lg">Check Your Eligibility </a>
+        </div>
+        
+        <!-- Image -->
+         
+        <div class="col-md-6 text-center">
+          <img src="{{ url_for('static', filename='images/slide.avif') }}" alt="Loan illustration">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+   <!-- How It Works -->
+    <div class="row">
+    <section class="bg-light py-5 mt-4">
+        <div class="container">
+            <h1 class="text-center mb-4"><b>How It Works</b></h1>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                  <center>
+                    <img src="{{ url_for('static', filename='images/images-5.jpeg') }}" class="img-fluid rounded mb-3 img-height" alt="Data Collection">
+                    <h5 class="mb-2"><b>Data Collection</b></h5>
+                    <p>Collect relevant customer data like credit history, income, employment details, and more.</p></center>
+                </div>
+                <div class="col-md-4 text-center">
+                  <center>
+                    <img src="{{ url_for('static', filename='images/images-4.jpeg') }}" class="img-fluid rounded mb-3 img-height" alt="Model Training">
+                    <h5 class="mb-2"><b>Model Training</b></h5></center>
+                    <p>Train machine learning models on historical data to recognize patterns of loan approvals and defaults.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                  <center>
+                    <img src="{{ url_for('static', filename='images/images.jpeg') }}" class="img-fluid rounded mb-3 img-height" alt="Prediction">
+                    <h5 class="mb-2"><b>Real-Time Prediction</b></h5></center>
+                    <p>Provide instant predictions on whether a new loan application is likely to be approved or rejected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- Our Values -->
+    <section class="container my-5">
+        <h1 class="text-center mb-4"><b>Our Core Values</b></h1>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <h5 class="mb-2"><b>Accuracy</b></h5>
+                <p>We focus on delivering highly accurate predictions with state-of-the-art ML algorithms.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h5 class="mb-2"><b>Transparency</b></h5>
+                <p>Clear, explainable predictions so users understand the decisions made.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h5 class="mb-2"><b>Speed</b></h5>
+                <p>Provide near-instant predictions to speed up the loan processing pipeline.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <h5 class="mb-2"><b>Security</b></h5>
+                <p>We follow best practices to keep sensitive data secure and private.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Call to Action -->
+    <section class="py-5 text-center bg-primary text-white">
+        <div class="container">
+            <h2><b>Check your eligibility for loan approval process ?</b></h2>
+            <a href="./eligibility" class="btn btn-light btn-lg mt-3">Get Start</a>
+        </div>
+    </section>
+
+    {% endblock %}

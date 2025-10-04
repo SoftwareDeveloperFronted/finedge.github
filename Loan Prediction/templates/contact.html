@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{% block title %}Contact Us - Loan Portal{% endblock %}
+{% block x %}
+    <!-- Contact Hero -->
+    <section class="contact-hero text-white text-center d-flex align-items-center justify-content-center">
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="container ">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} text-center">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <div class="row justify-content-center py-5">
+            <div class="col-md-8">
+                <form method="POST" class="shadow p-4 bg-light rounded">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Your Mobile Number</label>
+                        <input type="number" class="form-control" id="number" name="number" required placeholder="Enter your mobile number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="sp@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   {% endblock %}

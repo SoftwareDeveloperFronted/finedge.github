@@ -1,0 +1,72 @@
+{% extends 'base.html'%}
+{% block title %}About Us - Loan Portal{% endblock %}
+{% block x %}
+
+<!-- Hero Section -->
+    <section class="mb-4 text-center">
+        <div class="container">
+            <h1 class="display-8 mb-2"> <b>About Loan Approval System</b></h1>
+            <p>Welcome to Loan Approval System – your reliable partner in the digital transformation of loan management and credit decision-making.
+
+In today’s fast-paced world, financial institutions need powerful, efficient, and accurate tools to process loan applications. Our Loan Approval System is designed with cutting-edge technology to simplify and accelerate the loan approval process, helping banks, credit unions, and microfinance companies make informed decisions in real time.</p>
+        </div>
+    </section>
+    <!-- Mission & Vision -->
+    <section class="container w-full">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="mb-2"><b>Our Mission</b></h2>
+                <p>
+                    At LoanPredictor, our mission is to revolutionize the way financial institutions and individuals
+                    assess loan eligibility by providing fast, accurate, and reliable predictions using advanced machine learning algorithms.
+                    We aim to reduce manual effort and subjective decision-making in the loan approval process.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='images/images-4.jpeg') }}" class="img-fluid mb-3" alt="Team Member">
+            </div>
+            <div class="row">
+            
+            <div class="col-md-4">
+                <img src="{{ url_for('static', filename='images/images-2.jpeg') }}" class="img-fluid mb-3" alt="Team Member">
+            </div>
+            <div class="col-md-8">
+                <h2 class="mb-2"><b>Our Vision</b></h2>
+                <p>
+                    To be the leading solution in predictive analytics for the financial industry, making credit accessible to more people
+                    by helping lenders minimize risk and borrowers get fair evaluations.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Our Team -->
+    <section class="container mb-4">
+        <h2 class="text-center mb-4"><b>Meet Our Team</b></h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <center>
+                <img src="{{ url_for('static', filename='images/images-3.jpeg') }}" class="img-fluid  mb-3" alt="Team Member">
+                    <h5 class="mb-2"><b>Sanju Pandey</b></h5>
+                <p>Lead Data Scientist & Developer</p></center>
+            </div>
+            <div class="col-md-4 text-center">
+                <center>
+                <img src="{{ url_for('static', filename='images/images-6.jpeg') }}" class="img-fluid mb-3" alt="Team Member">
+                <h5 class="mb-2"><b>Member_2</b></h5>
+                <p>Software Engineer</p></center>
+            </div>
+            <div class="col-md-4 text-center">
+                <center>
+                <img src="{{ url_for('static', filename='images/images-7.jpeg') }}" class="img-fluid mb-3" alt="Team Member">
+                <h5 class="mb-2"><b>Member_3</b></h5>
+                <p>Business Analyst</p></center>
+            </div>
+        </div>
+    </section>
+
+
+   {% endblock %}

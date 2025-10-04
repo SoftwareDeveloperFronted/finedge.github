@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% block title %}Result - Loan Portal{% endblock %}
+{% block x %}
+    <div class="container mt-5 text-center">
+        <h2><b>Eligibility Result</b></h2>
+        <div class="alert alert-info mt-4">
+            {{ result }}
+        </div>
+        <a href="./check_eligibility" class="btn btn-primary">Check Again</a>
+    </div>
+{% endblock %}

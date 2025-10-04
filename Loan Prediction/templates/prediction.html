@@ -1,0 +1,109 @@
+{% extends 'base.html'%}
+{% block title %}Prediction - Loan Portal{% endblock %}
+{% block x %}
+    <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Loan Prediction Project</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fill the form for prediction . </p>
+    </div>
+    <div>
+    <center><h2><b>{{prediction_text}}</b></h2></center><br>
+  </div>
+    
+  <form action='\predict' method='POST'>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Enter Gender</label>
+  <select class="form-select" id="gender" name="gender" aria-label="Default select example">
+  <option selected>-- Select gender --</option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+</select>
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Married Status</label>
+  <select class="form-select" id="married" name="married" aria-label="Default select example">
+  <option selected>-- Select married status --</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Dependents</label>
+  <select class="form-select" id="dependents" name="dependents" aria-label="Default select example">
+  <option selected>-- Select Dependents --</option>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3+">3+</option>
+</select>
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Education</label>
+  <select class="form-select" id="education" name="education" aria-label="Default select example">
+  <option selected>-- Select education --</option>
+  <option value="Graduate">Graduate</option>
+  <option value="Not Graduate">Not Graduate</option>
+</select>
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Self_Employed</label>
+  <select class="form-select" id="employed" name="employed" aria-label="Default select example">
+  <option selected>-- Select self_employed --</option>
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
+</select>
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Credit_History</label>
+  <select class="form-select" id="credit" name="credit" aria-label="Default select example">
+  <option selected>-- Select credit_history --</option>
+  <option value="0">0</option>
+  <option value="1">1</option>
+</select>
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Property_Area</label>
+  <select class="form-select" id="area" name="area" aria-label="Default select example">
+  <option selected>-- Select property_area --</option>
+  <option value="Urban">Urban</option>
+  <option value="Rural">Rural</option>
+  <option value="Semiurban">Semiurban</option>
+</select>
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Loan_Status</label>
+  <select class="form-select" id="loan" name="loan" aria-label="Default select example">
+  <option selected>-- Select loan_status --</option>
+  <option value="Y">Y</option>
+  <option value="N">N</option>
+</select>
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Enter Applicantincome</label>
+  <input type="number" class="form-control" id="ApplicantIncome" name="ApplicantIncome" placeholder="Applicantincome">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Enter Coapplicantincome</label>
+  <input type="number" class="form-control" id="CoapplicantIncome" name="CoapplicantIncome" placeholder="Coapplicantincome">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Enter LoanAmount</label>
+  <input type="number" class="form-control" id="LoanAmount" name="LoanAmount" placeholder="LoanAmount">
+</div>
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Enter Loan_Amount_Term</label>
+  <input type="number" class="form-control" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="Loan_Amount_Term">
+</div>
+<br>
+<center>
+    <a class="btn btn-primary" href="./" role="button"> Back </a>
+    <button type="submit" class="btn btn-primary">Predict</button>
+    </center>
+  </form>
+
+  
+</section>
+
+   {% endblock %}
